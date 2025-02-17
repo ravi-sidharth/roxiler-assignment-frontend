@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const TransactionStatistics = () => {
-
     const [month,setMonth] =useState(3)
     const [statisticsData, setStatisticsData] =useState("")
     const fetchStatisticsData= async() => {
@@ -41,7 +40,7 @@ const TransactionStatistics = () => {
       <div className="p-2 rounded-lg shadow-2xl shadow-gray-600 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
         <div className="flex gap-5">
           <div>Total sale</div>
-          <div>{(statisticsData.totalSaleAmount).toFixed(2)}</div>
+          <div>{(statisticsData.totalSaleAmount)}</div>
         </div>
         <div className="flex gap-5">
           <div>Total sold item</div>

@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   server:{
     proxy:{
-      '/api':'http://localhost:3000'
+      '/api':'https://roxiler-backend-assignment-p406.onrender.com'
     }
   },
   plugins: [
