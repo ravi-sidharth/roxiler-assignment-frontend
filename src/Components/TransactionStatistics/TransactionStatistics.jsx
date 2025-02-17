@@ -5,7 +5,7 @@ const TransactionStatistics = () => {
     const [month,setMonth] =useState(3)
     const [statisticsData, setStatisticsData] =useState("")
     const fetchStatisticsData= async() => {
-        const result =await axios.get(`/api/statistics?month=${month}`)
+        const result =await axios.get(`https://roxiler-backend-assignment-p406.onrender.com/api/statistics?month=${month}`)
         setStatisticsData(result.data.statistics[0])
     }
 

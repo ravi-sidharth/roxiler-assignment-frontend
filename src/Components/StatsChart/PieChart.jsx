@@ -22,7 +22,7 @@ const PieChart = () => {
   };
 
   const fetchUniqueCategoryData = async () => {
-    const result = await axios.get(`api/pie-chart?month=${month}`);
+    const result = await axios.get(`https://roxiler-backend-assignment-p406.onrender.com/api/pie-chart?month=${month}`);
     setPieChartData(result.data.pieChartData);
   };
 

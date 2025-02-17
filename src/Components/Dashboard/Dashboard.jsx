@@ -21,7 +21,7 @@ const Dashboard = () => {
     }
 
     const fetchAllTransactions = async() => {
-      const result =await  axios.get(`/api/transactions?month=${month}&search=${search}&page=${currentPage}`)
+      const result =await  axios.get(`https://roxiler-backend-assignment-p406.onrender.com/api/transactions?month=${month}&search=${search}&page=${currentPage}`)
       setTransactionData(result.data.transactions)
       setCurrentPage(result.data.page)
     }

@@ -21,7 +21,7 @@ function BarChart() {
     };
 
     const fetchBarChartData = async () => {
-            const result = await axios.get(`/api/bar-chart?month=${month}`)
+            const result = await axios.get(`https://roxiler-backend-assignment-p406.onrender.com/api/bar-chart?month=${month}`)
             setBarChartData(result.data.barChartData[0]);
     };
 
